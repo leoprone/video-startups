@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrusel Cinta Transportadora</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+  <style>
+
+
+body{
+        background-color: black;
+        padding-top: 200px;
+    }
+
+    .section{
+        background-color: black;
+    }
+
+
+    .section > *{
+        font-family: Geis, sans-serif;
+    }
+
+    .section-header{
+      display: flex;
+      justify-content: center;
+        margin-bottom: -100px;
+        
+        align-items: center;
+    }
+
+    .section-header img{
+      
+    width: 35%;
+  }
+
+
+
+   
+    .carrusel {
+      background-color: white;
+      width: 450%;
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      margin-top: 60px;
+  
+    }
+
+    .carrusel-track {
+      display: flex;
+      animation: scroll linear infinite;
+    }
+
+    .card {
+      background-color: white;
+      
+      width: 400px;
+      height: 340px;
+    
+      margin: 0 20px;
+     /* box-shadow: inset 0 0 1.2rem rgb(108, 172, 228);
+      border: 2px solid rgb(108, 172, 228);*/
+    }
+
+
+.nombre {
+       color: rgb(145, 144, 144);
+       font-size: 26px;
+    letter-spacing: 2px;
+    
+      font-weight: 500;
+ 
+        text-align: center;
+        
+        margin: 30px auto;
+
+       
+    }
+    .testimonial-card-top{
+      display: flex;
+      flex-direction: column;
+        box-sizing: border-box;
+        justify-content: space-between;
+      position: relative;
+      width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+
+  align-items: center;
+     
+
+       
+    }
+
+
+
+    .testimonial-client-image{
+        
+        margin-top: 20px;
+        max-width: 100%;
+        display: inline-block;
+   
+     
+       
+    }
+
+    .testimonial-client-image img{
+        
+        
+     
+        
+        position: absolute;
+      
+
+     
+       
+    }
+  
+
+
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="section">
+<div class="section-header">
+  <img src="assets/images/imagen_ABS_portada_artic.png" alt="">
+      <!--   <h2 class="section-title">Testimonios</h2>
+        <div class="comment">Preferimos que sean nuestros clientes quienes te compartan su experiencia</div>
+ --></div>
+
+<div class="carrusel">
+  <div class="carrusel-track" id="track">
+     
+    <!-- ----------  Card 1   ------------ -->
+        <div class="card">
+            <div class="testimonial-card-top">
+               <!--  <div class="testimonial-quote-icon-block">
+                    <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+                </div>-->
+                
+                <div class="testimonial-client-image-block">
+                    <img class="testimonial-client-image" src="assets/images/biocle_logo.jpg" alt="Imagen del cliente">
+                </div> 
+                <div class="nombre">BioClé</div>
+            </div>
+           
+       <!--      <div class="testimonial-text-block">
+                <div class="name-container">
+                    <div class="name">Elvis Ortiz</div>
+                    <div class="role">Master Motors</div>
+                </div>
+                <div class="testimonial-text">
+                    Gracias a Leopol Media logramos posicionarnos en Ponce como el Concesionario de autos usados #1 en ventas. Estamos contentos y ampliando nuestro crecimiento.
+                </div>
+                
+            </div> 
+             <div class="testimonial-client-image-block">
+                    <img class="testimonial-client-image" src="assets/images/biocle.png" alt="Imagen del cliente">
+                </div>-->
+        </div>
+    
+          <!-- ----------  Card 2   ------------ -->
+        
+                <div class="card">
+             
+            <div class="testimonial-card-top">
+               <!--  <div class="testimonial-quote-icon-block">
+                    <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+                </div>-->
+                <div class="testimonial-client-image-block">
+                    <img class="testimonial-client-image" src="assets/images/mycoriumbiotech.jpg" alt="Imagen del cliente">
+                </div> 
+                <div class="nombre">Mycorium Biotech</div>
+            </div>
+            </div>
+
+          
+         
+
+                   <!-- ----------  Card 3   ------------ -->
+        
+          <div class="card">
+       
+      <div class="testimonial-card-top">
+         <!--  <div class="testimonial-quote-icon-block">
+              <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+          </div>-->
+          <div class="testimonial-client-image-block" style="width: 270px;">
+              <img class="testimonial-client-image" src="assets/images/dharma-bioscience.png" alt="Imagen del cliente">
+          </div> 
+          <div class="nombre">Dharma Bioscience</div>
+      </div>
+      </div>
+
+    
+   
+
+             <!-- ----------  Card 4   ------------ -->
+            
+              <div class="card">
+           
+          <div class="testimonial-card-top">
+             <!--  <div class="testimonial-quote-icon-block">
+                  <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+              </div>-->
+              <div class="testimonial-client-image-block">
+                  <img class="testimonial-client-image" src="assets/images/agrosintex.jpg" alt="Imagen del cliente">
+              </div> 
+              <div class="nombre">Agrosintex</div>
+          </div>
+          </div>
+
+        
+       
+
+                 <!-- ----------  Card 5   ------------ -->
+                 
+                  <div class="card">
+               
+              <div class="testimonial-card-top">
+                 <!--  <div class="testimonial-quote-icon-block">
+                      <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+                  </div>-->
+                  <div class="testimonial-client-image-block">
+                      <img class="testimonial-client-image" src="assets/images/oncoliq.jpg" alt="Imagen del cliente">
+                  </div> 
+                  <div class="nombre">Oncoliq</div>
+              </div>
+              </div>
+  
+            
+          
+
+                     <!-- ----------  Card 6   ------------ -->
+        
+          <div class="card">
+       
+      <div class="testimonial-card-top">
+         <!--  <div class="testimonial-quote-icon-block">
+              <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+          </div>-->
+          <div class="testimonial-client-image-block">
+              <img class="testimonial-client-image" src="assets/images/argentagbio.jpg" alt="Imagen del cliente">
+          </div> 
+          <div class="nombre">ArgenTag</div>
+      </div>
+      </div>
+
+    
+  
+
+             <!-- ----------  Card 7  ------------ -->
+             
+              <div class="card">
+           
+          <div class="testimonial-card-top">
+             <!--  <div class="testimonial-quote-icon-block">
+                  <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+              </div>-->
+              <div class="testimonial-client-image-block">
+                  <img class="testimonial-client-image" src="assets/images/trebe_biotech.jpg" alt="Imagen del cliente">
+              </div> 
+              <div class="nombre">Trebe Biotech</div>
+          </div>
+          </div>
+
+        
+      
+
+                 <!-- ----------  Card 8   ------------ -->
+                 
+                  <div class="card">
+               
+              <div class="testimonial-card-top">
+                 <!--  <div class="testimonial-quote-icon-block">
+                      <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+                  </div>-->
+                  <div class="testimonial-client-image-block">
+                      <img class="testimonial-client-image" src="assets/images/mestembio.jpg" alt="Imagen del cliente">
+                  </div> 
+                  <div class="nombre">Mestem Bio</div>
+              </div>
+              </div>
+  
+            
+          
+
+                     <!-- ----------  Card 9   ------------ -->
+      
+          <div class="card">
+       
+      <div class="testimonial-card-top">
+         <!--  <div class="testimonial-quote-icon-block">
+              <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+          </div>-->
+          <div class="testimonial-client-image-block">
+              <img class="testimonial-client-image" src="assets/images/spherebio.jpg" alt="Imagen del cliente">
+          </div> 
+          <div class="nombre">Sphere Bio</div>
+      </div>
+      </div>
+
+    
+  
+
+             <!-- ----------  Card 10   ------------ -->
+             
+              <div class="card">
+           
+          <div class="testimonial-card-top">
+             <!--  <div class="testimonial-quote-icon-block">
+                  <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+              </div>-->
+              <div class="testimonial-client-image-block">
+                  <img class="testimonial-client-image" src="assets/images/exomas.jpg" alt="Imagen del cliente">
+              </div> 
+              <div class="nombre">Exomas</div>
+          </div>
+          </div>
+
+        
+       
+
+                 <!-- ----------  Card 11  ------------ -->
+                 
+                  <div class="card">
+               
+              <div class="testimonial-card-top">
+                 <!--  <div class="testimonial-quote-icon-block">
+                      <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+                  </div>-->
+                  <div class="testimonial-client-image-block">
+                      <img class="testimonial-client-image" src="assets/images/amnovabiotech.jpg" alt="Imagen del cliente">
+                  </div> 
+                  <div class="nombre">Amnova Biotech</div>
+              </div>
+              </div>
+  
+            
+           
+
+                     <!-- ----------  Card 12   ------------ -->
+        
+          <div class="card">
+       
+      <div class="testimonial-card-top">
+         <!--  <div class="testimonial-quote-icon-block">
+              <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+          </div>-->
+          <div class="testimonial-client-image-block">
+              <img class="testimonial-client-image" src="assets/images/resistia_logo.jpg" alt="Imagen del cliente">
+          </div> 
+          <div class="nombre">Resistia</div>
+      </div>
+      </div>
+
+    
+
+
+                     <!-- ----------  Card 13   ------------ -->
+        <div class="card">
+          
+       
+      <div class="testimonial-card-top">
+         <!--  <div class="testimonial-quote-icon-block">
+              <img class="testimonial-quote-icon" src="https://cdn.prod.website-files.com/681a3543e37b9a222a8ce9b8/68213673d973842c02e134e1_Quote%20Icon.svg" loading="lazy" alt="Quote Icon">
+          </div>-->
+          <div class="testimonial-client-image-block">
+              <img class="testimonial-client-image" src="assets/images/nat4bio.jpg" alt="Imagen del cliente">
+          </div> 
+          <div class="nombre">Nat4Bio</div>
+      </div>
+      </div>
+
+    
+  
+</div>
+</section>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const track = document.getElementById("track");
+    const items = Array.from(track.children);
+
+    // Duplicar los ítems para efecto infinito
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    // Calcular ancho total
+    const itemWidth = items[0].offsetWidth + parseInt(getComputedStyle(items[0]).marginRight);
+    const totalItems = track.children.length;
+    const totalWidth = itemWidth * totalItems;
+
+    track.style.width = totalWidth + "px";
+
+    // Ajustar duración de animación según ancho
+    const velocidad = 400; // menor = más rápido
+    const duracion = totalWidth / velocidad;
+    track.style.animationDuration = duracion + "s";
+  });
+</script>
+
+</body>
+</html>
